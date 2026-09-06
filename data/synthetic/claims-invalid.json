@@ -1,0 +1,110 @@
+[
+  {
+    "case_id": "invalid-negative-amount",
+    "expected_error": "greater_than_equal",
+    "expected_field": "amount",
+    "payload": {
+      "claim_id": "claim-cm-9001-negative-amount",
+      "tenant_id": "tenant-cotswold-demo-a",
+      "policy_id": "policy-cm-motor-0001",
+      "claim_type": "motor",
+      "claimant_reference": "claimant-ref-a-9001",
+      "loss_at": "2026-08-01T08:00:00Z",
+      "submitted_at": "2026-08-02T09:00:00Z",
+      "description": "Wing mirror damaged in a car park.",
+      "incident": { "vehicle_reference": "vehicle-ref-a-9001" },
+      "amount": "-50.00",
+      "currency": "GBP"
+    }
+  },
+  {
+    "case_id": "invalid-loss-after-submission",
+    "expected_error": "value_error",
+    "expected_field": "",
+    "payload": {
+      "claim_id": "claim-cm-9001-negative-amount",
+      "tenant_id": "tenant-cotswold-demo-a",
+      "policy_id": "policy-cm-motor-0001",
+      "claim_type": "motor",
+      "claimant_reference": "claimant-ref-a-9001",
+      "loss_at": "2026-08-03T08:00:00Z",
+      "submitted_at": "2026-08-02T09:00:00Z",
+      "description": "Wing mirror damaged in a car park.",
+      "incident": { "vehicle_reference": "vehicle-ref-a-9001" },
+      "amount": "50.00",
+      "currency": "GBP"
+    }
+  },
+  {
+    "case_id": "invalid-amount-without-currency",
+    "expected_error": "value_error",
+    "expected_field": "",
+    "payload": {
+      "claim_id": "claim-cm-9001-negative-amount",
+      "tenant_id": "tenant-cotswold-demo-a",
+      "policy_id": "policy-cm-motor-0001",
+      "claim_type": "motor",
+      "claimant_reference": "claimant-ref-a-9001",
+      "loss_at": "2026-08-01T08:00:00Z",
+      "submitted_at": "2026-08-02T09:00:00Z",
+      "description": "Wing mirror damaged in a car park.",
+      "incident": { "vehicle_reference": "vehicle-ref-a-9001" },
+      "amount": "50.00"
+    }
+  },
+  {
+    "case_id": "invalid-tenant-id-is-a-claim-id",
+    "expected_error": "string_pattern_mismatch",
+    "expected_field": "tenant_id",
+    "payload": {
+      "claim_id": "claim-cm-9001-negative-amount",
+      "tenant_id": "claim-cm-9001-negative-amount",
+      "policy_id": "policy-cm-motor-0001",
+      "claim_type": "motor",
+      "claimant_reference": "claimant-ref-a-9001",
+      "loss_at": "2026-08-01T08:00:00Z",
+      "submitted_at": "2026-08-02T09:00:00Z",
+      "description": "Wing mirror damaged in a car park.",
+      "incident": { "vehicle_reference": "vehicle-ref-a-9001" },
+      "amount": "50.00",
+      "currency": "GBP"
+    }
+  },
+  {
+    "case_id": "invalid-unknown-field",
+    "expected_error": "extra_forbidden",
+    "expected_field": "priority_override",
+    "payload": {
+      "claim_id": "claim-cm-9001-negative-amount",
+      "tenant_id": "tenant-cotswold-demo-a",
+      "policy_id": "policy-cm-motor-0001",
+      "claim_type": "motor",
+      "claimant_reference": "claimant-ref-a-9001",
+      "loss_at": "2026-08-01T08:00:00Z",
+      "submitted_at": "2026-08-02T09:00:00Z",
+      "description": "Wing mirror damaged in a car park.",
+      "incident": { "vehicle_reference": "vehicle-ref-a-9001" },
+      "amount": "50.00",
+      "currency": "GBP",
+      "priority_override": true
+    }
+  },
+  {
+    "case_id": "invalid-cross-tenant-policy-reference",
+    "expected_error": "referential_integrity",
+    "expected_field": "policy_id",
+    "payload": {
+      "claim_id": "claim-cm-9001-negative-amount",
+      "tenant_id": "tenant-cotswold-demo-a",
+      "policy_id": "policy-cd-property-0005",
+      "claim_type": "motor",
+      "claimant_reference": "claimant-ref-a-9001",
+      "loss_at": "2026-08-01T08:00:00Z",
+      "submitted_at": "2026-08-02T09:00:00Z",
+      "description": "Wing mirror damaged in a car park.",
+      "incident": { "vehicle_reference": "vehicle-ref-a-9001" },
+      "amount": "50.00",
+      "currency": "GBP"
+    }
+  }
+]

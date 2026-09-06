@@ -1,0 +1,72 @@
+[
+  {
+    "policy_id": "policy-cm-motor-0001",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v2",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "autonomous_settlement_limit": "750.00",
+    "currency": "GBP"
+  },
+  {
+    "policy_id": "policy-cm-motor-0001",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2025-01-01T00:00:00Z",
+    "effective_to": "2025-12-31T23:59:59Z",
+    "autonomous_settlement_limit": "500.00",
+    "currency": "GBP"
+  },
+  {
+    "policy_id": "policy-cm-motor-0002",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "autonomous_settlement_limit": "750.00",
+    "currency": "GBP"
+  },
+  {
+    "policy_id": "policy-cm-property-0003",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "autonomous_settlement_limit": "750.00",
+    "currency": "GBP"
+  },
+  {
+    "policy_id": "policy-cd-motor-0004",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "autonomous_settlement_limit": "750.00",
+    "currency": "GBP"
+  },
+  {
+    "policy_id": "policy-cd-property-0005",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "autonomous_settlement_limit": "750.00",
+    "currency": "GBP"
+  },
+  {
+    "policy_id": "policy-cd-property-0006",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "autonomous_settlement_limit": "750.00",
+    "currency": "GBP"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "clause_id": "clause-cm-motor-0001-excess",
+    "policy_id": "policy-cm-motor-0001",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v2",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "A standard excess of 250.00 GBP applies to every motor claim unless the loss is a total theft reported within 24 hours.",
+    "content_hash": "sha256:a28da1c8cfe919ce5d6689205dc56e9d72018065bfd6321adb1dc836c58ff9dc"
+  },
+  {
+    "clause_id": "clause-cm-motor-0001-settlement-authority",
+    "policy_id": "policy-cm-motor-0001",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v2",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "No settlement above 750.00 GBP may proceed without authenticated human approval.",
+    "content_hash": "sha256:993be43511fe03e078b4d6561b41cd8fe8d2a3476c014ee0d68e1f1d405439d3"
+  },
+  {
+    "clause_id": "clause-cm-motor-0001-excess-v1",
+    "policy_id": "policy-cm-motor-0001",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2025-01-01T00:00:00Z",
+    "effective_to": "2025-12-31T23:59:59Z",
+    "text": "A standard excess of 500.00 GBP applies to every motor claim.",
+    "content_hash": "sha256:1923e42f7dcc0005b7f51da48b0c5c334a1552bc17bd63272722a56a6ef67515"
+  },
+  {
+    "clause_id": "clause-cm-motor-0001-settlement-authority-v1",
+    "policy_id": "policy-cm-motor-0001",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2025-01-01T00:00:00Z",
+    "effective_to": "2025-12-31T23:59:59Z",
+    "text": "No settlement above 500.00 GBP may proceed without authenticated human approval.",
+    "content_hash": "sha256:2a206a89ceffdcb54974fb718bea9e9202d5a15bad30f7ee4cd736f159b26603"
+  },
+  {
+    "clause_id": "clause-cm-motor-0002-notification-window",
+    "policy_id": "policy-cm-motor-0002",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "The policyholder must notify Cotswold Mutual of a motor loss within 30 days of becoming aware of it.",
+    "content_hash": "sha256:9878db2198edbab6add50198fbbacd3b30134ac6e6bd0c55594424a0b58ebb4a"
+  },
+  {
+    "clause_id": "clause-cm-motor-0002-exclusions",
+    "policy_id": "policy-cm-motor-0002",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "Loss arising while the vehicle is driven by an unlicensed driver is excluded from cover.",
+    "content_hash": "sha256:3e1ee4b61d9172484c20953b1236aaddf7ea7b6a723bb110cc8d9b250e8d955b"
+  },
+  {
+    "clause_id": "clause-cm-property-0003-excess",
+    "policy_id": "policy-cm-property-0003",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "A standard excess of 300.00 GBP applies to each covered property loss.",
+    "content_hash": "sha256:6844063cbf333c79dfce524489040b0867f76092408e55c445e5fe8edb08bfd5"
+  },
+  {
+    "clause_id": "clause-cm-property-0003-settlement-authority",
+    "policy_id": "policy-cm-property-0003",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "No settlement above 750.00 GBP may proceed without authenticated human approval.",
+    "content_hash": "sha256:0c9ab6bf1477373d81a2219e3978265903c4c3715ac193cd5d10b217d282c3d5"
+  },
+  {
+    "clause_id": "clause-cd-motor-0004-notification-window",
+    "policy_id": "policy-cd-motor-0004",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "The policyholder must notify Cotswold Mutual of a motor loss within 14 days of becoming aware of it.",
+    "content_hash": "sha256:f5b6d12b1bf9829a87f343d92798c3f5bd42a24ad5cbfebc044b733c1da2198b"
+  },
+  {
+    "clause_id": "clause-cd-motor-0004-exclusions",
+    "policy_id": "policy-cd-motor-0004",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "motor",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "Loss caused by racing, pace-making, or speed testing is excluded from cover.",
+    "content_hash": "sha256:ff59a37a65109b5430e1f27dc33a1c4f9fb553dd649c2afec9e3da7875fa9448"
+  },
+  {
+    "clause_id": "clause-cd-property-0005-excess",
+    "policy_id": "policy-cd-property-0005",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "A standard excess of 200.00 GBP applies to each covered property loss.",
+    "content_hash": "sha256:b38cf535ae99bbf9cb0733414449989a5983cff15c1f318d891b9c11ba1c335a"
+  },
+  {
+    "clause_id": "clause-cd-property-0005-notification-window",
+    "policy_id": "policy-cd-property-0005",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "The policyholder must notify Cotswold Mutual of a property loss within 30 days of becoming aware of it.",
+    "content_hash": "sha256:8688b37e1ca8ed31552e27538d9817d4926e7cf30ab7388f123c74ddce674bc4"
+  },
+  {
+    "clause_id": "clause-cd-property-0006-exclusions",
+    "policy_id": "policy-cd-property-0006",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "Loss caused by gradual wear, deterioration, or poor maintenance is excluded from cover.",
+    "content_hash": "sha256:96f45d1032d859727845ac960dc315318df33737f7eec1328df3e0a6ff0d9748"
+  },
+  {
+    "clause_id": "clause-cd-property-0006-settlement-authority",
+    "policy_id": "policy-cd-property-0006",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "policy_version": "v1",
+    "line_of_business": "property",
+    "effective_from": "2026-01-01T00:00:00Z",
+    "effective_to": null,
+    "text": "No settlement above 750.00 GBP may proceed without authenticated human approval.",
+    "content_hash": "sha256:47638314634fbc301de80b152ad15e4e55bcc8eb08a94df9aa7d96ee3ea76baf"
+  }
+]

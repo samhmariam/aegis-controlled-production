@@ -28,6 +28,12 @@ def _to_utc(value: datetime) -> datetime:
     return value.astimezone(UTC)
 
 
+def to_canonical_timestamp(value: datetime) -> str:
+    """The single textual form for a timestamp: UTC, ISO-8601, 'Z' suffix, sortable as text."""
+    return value.astimezone(UTC).isoformat().replace("+00:00", "Z")
+
+
+
 UtcDatetime = Annotated[AwareDatetime, AfterValidator(_to_utc)]
 
 TenantId = Annotated[str, StringConstraints(pattern=r"^tenant-[a-z0-9][a-z0-9-]{2,47}$")]
@@ -55,7 +61,7 @@ def _canonical_default(value: Any) -> str:
     if isinstance(value, Decimal):
         return format(value, "f")
     if isinstance(value, datetime):
-        return value.astimezone(UTC).isoformat().replace("+00:00", "Z")
+        return to_canonical_timestamp(value)
     raise TypeError(f"non-canonical type in payload: {type(value).__name__}")
 
 

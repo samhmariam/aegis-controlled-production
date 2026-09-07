@@ -10,8 +10,8 @@ import pytest
 from pydantic import ValidationError
 
 from aegis.context.models import PolicyClause
-from aegis.domain.base import Money, PolicyId, PolicyVersion, StrictModel, TenantId, UtcDatetime
-from aegis.domain.models import ClaimSubmission, ClaimType, Currency
+from aegis.domain.models import ClaimSubmission
+from aegis.persistence.fixtures import PolicyFixture
 
 SYNTHETIC_DATA_DIR = Path("data/synthetic")
 FORBIDDEN = {
@@ -23,17 +23,6 @@ FORBIDDEN = {
     "openai_key": r"\bsk-[A-Za-z0-9]{20,}\b",
     "private_key": r"-----BEGIN [A-Z ]*PRIVATE KEY-----",
 }
-
-
-class PolicyFixture(StrictModel):
-    policy_id: PolicyId
-    tenant_id: TenantId
-    policy_version: PolicyVersion
-    line_of_business: ClaimType
-    effective_from: UtcDatetime
-    effective_to: UtcDatetime | None = None
-    autonomous_settlement_limit: Money
-    currency: Currency
 
 
 @dataclass(frozen=True)

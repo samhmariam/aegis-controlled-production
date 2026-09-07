@@ -1,0 +1,45 @@
+[
+  {
+    "principal_id": "principal-handler-a",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "principal_type": "user",
+    "scopes": ["claims:read"],
+    "roles": ["claims_handler"],
+    "credential_sha256": "sha256:61b3a8d23601275b325cffd6c0110ba82bb33a7540ca49758ea087551010eb93",
+    "lifetime_seconds": 900,
+    "entitled_claims": [
+      "claim-cm-0001", "claim-cm-0003", "claim-cm-0005",
+      "claim-cm-0011-stale-policy", "claim-cm-0012-injection"
+    ]
+  },
+  {
+    "principal_id": "principal-supervisor-a",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "principal_type": "user",
+    "scopes": ["claims:read"],
+    "roles": ["claims_supervisor"],
+    "credential_sha256": "sha256:cda2b9b0b00aacacc3436a1dd3d6173a98c9b1617f0f94dd520b8d1f1dc87c09",
+    "lifetime_seconds": 900,
+    "entitled_claims": []
+  },
+  {
+    "principal_id": "principal-handler-b",
+    "tenant_id": "tenant-cotswold-demo-b",
+    "principal_type": "user",
+    "scopes": ["claims:read"],
+    "roles": ["claims_handler"],
+    "credential_sha256": "sha256:fc90e15403d77e762f6f1a5b7b03ca72b54d57ab499bfe9e1f0510e9812ad823",
+    "lifetime_seconds": 900,
+    "entitled_claims": ["claim-cd-0006", "claim-cd-0007"]
+  },
+  {
+    "principal_id": "principal-auditor-a",
+    "tenant_id": "tenant-cotswold-demo-a",
+    "principal_type": "user",
+    "scopes": ["audit:read"],
+    "roles": ["auditor"],
+    "credential_sha256": "sha256:9e5b63d07a6d608c88971ff4a6390805e633d153c414b86b5aa8ec20e9f90d99",
+    "lifetime_seconds": 900,
+    "entitled_claims": ["claim-cm-0001"]
+  }
+]

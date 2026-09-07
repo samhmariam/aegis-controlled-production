@@ -22,11 +22,21 @@ class Settings(BaseSettings):
     app_version: str = "0.1.0"
     schema_version: str = SCHEMA_VERSION
     synthetic_data_dir: DirectoryPath = Path("data/synthetic")
+    demo_database_path: Path = Path("data/local/aegis-demo.db")
+    demo_root: Path = Path("data/local")
+    demo_principals_file: Path = Path("controls/demo-principals.json")
+    retrieval_max_clauses: int = 4
+    retrieval_excerpt_chars: int = 400
+
 
     def __init__(self, **values: Any) -> None:
         known_env_vars = {f"AEGIS_{field_name.upper()}" for field_name in type(self).model_fields}
         unexpected_env_vars = {
-            name for name in os.environ if name.startswith("AEGIS_") and name not in known_env_vars
+            name
+            for name in os.environ
+            if name.startswith("AEGIS_")
+            and name not in known_env_vars
+            and not name.startswith("AEGIS_DEMO_TOKEN_")
         }
         if unexpected_env_vars:
             raise ValidationError.from_exception_data(

@@ -74,3 +74,7 @@ branch = true
 
 [tool.coverage.report]
 show_missing = true
+
+[project.scripts]
+aegis-seed = "aegis.persistence.seed:main"
+
